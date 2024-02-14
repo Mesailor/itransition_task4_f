@@ -50,7 +50,7 @@ function AuthPage() {
           <input
             className="form-control"
             onChange={updateEmail}
-            type="text"
+            type="email"
             value={email}
           />
         </label>
@@ -64,7 +64,7 @@ function AuthPage() {
           />
         </label>
         <button className="btn btn-primary" type="submit">
-          Submit
+          Log in
         </button>
       </form>
       <p className="w-50">

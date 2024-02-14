@@ -64,7 +64,7 @@ function RegistrationPage() {
           <input
             className="form-control"
             onChange={updateEmail}
-            type="text"
+            type="email"
             value={email}
           />
         </label>
@@ -78,7 +78,7 @@ function RegistrationPage() {
           />
         </label>
         <button className="btn btn-primary" type="submit">
-          Submit
+          Sign in
         </button>
       </form>
       <p className="w-50">
