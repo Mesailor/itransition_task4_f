@@ -10,7 +10,7 @@ function Control() {
   async function blockUser() {
     if (!pickedUsers[0]) return alert("Choose user please!");
     let response = await backService.sendStatusUpdate(pickedUsers, "blocked");
-    alert(response.message);
+    console.log(response.message);
     if (pickedUsers.includes(currentUser._id)) {
       setAuth(false);
     }
@@ -20,14 +20,14 @@ function Control() {
   async function unblockUser() {
     if (!pickedUsers[0]) return alert("Choose user please!");
     let response = await backService.sendStatusUpdate(pickedUsers, "active");
-    alert(response.message);
+    console.log(response.message);
     setPickedUsers([]);
   }
 
   async function deleteUser() {
     if (!pickedUsers[0]) return alert("Choose user please!");
     let response = await backService.deleteUserReq(pickedUsers);
-    alert(response.message);
+    console.log(response.message);
     if (pickedUsers.includes(currentUser._id)) {
       setAuth(false);
     }
