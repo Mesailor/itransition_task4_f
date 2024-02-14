@@ -57,6 +57,7 @@ function RegistrationPage() {
             onChange={updateName}
             type="text"
             value={name}
+            required
           />
         </label>
         <label className="form-label w-100">
@@ -66,6 +67,7 @@ function RegistrationPage() {
             onChange={updateEmail}
             type="email"
             value={email}
+            required
           />
         </label>
         <label className="form-label w-100">
@@ -73,8 +75,9 @@ function RegistrationPage() {
           <input
             className="form-control"
             onChange={updatePassword}
-            type="text"
+            type="password"
             value={password}
+            required
           />
         </label>
         <button className="btn btn-primary" type="submit">

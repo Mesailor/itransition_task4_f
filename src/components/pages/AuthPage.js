@@ -52,6 +52,7 @@ function AuthPage() {
             onChange={updateEmail}
             type="email"
             value={email}
+            required
           />
         </label>
         <label className="form-label w-100">
@@ -59,8 +60,9 @@ function AuthPage() {
           <input
             className="form-control"
             onChange={updatePassword}
-            type="text"
+            type="password"
             value={password}
+            required
           />
         </label>
         <button className="btn btn-primary" type="submit">
